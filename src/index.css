@@ -79,7 +79,10 @@ textarea:focus {
 	flex-direction: column;
 	justify-content: space-between;
 	white-space: pre-wrap;
+	overflow-wrap: break-word;
 }
+
+/* overflow-wrap  = prevent text overflow from the box(or div)*/
 
 .note-footer {
 	display: flex;
