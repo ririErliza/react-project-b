@@ -26,7 +26,7 @@ function App() {
   }
   return (
     <div className="container">
-      <NotesList notes={notes}/>
+      <NotesList notes={notes} handleAddNote={addNote}/>
     </div>
   );
 }
