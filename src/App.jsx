@@ -19,6 +19,11 @@ function App() {
     text: 'third text...',
     date: '04/04/23'
   }]);
+
+  const addNote = (text) =>{
+    console.log(text)
+
+  }
   return (
     <div className="container">
       <NotesList notes={notes}/>
