@@ -28,11 +28,13 @@ function App() {
   const deleteNote = (id) =>{
     const newNotes = notes.filter((note)=> note.id !== id)
     setNotes(newNotes)
-
   }
+
+  const [searchText, setSearchText] = useState('');
+
   return (
     <div className="container">
-      <SearchBar/>
+      <SearchBar handleeSearchNote={setSearchText}/>
       <NotesList 
       notes={notes} 
       handleAddNote={addNote}
