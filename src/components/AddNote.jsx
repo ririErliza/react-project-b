@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function AddNote() {
+function AddNote({handleAddNote}) {
   const[noteText,setNoteText]=useState('');
 
   const handleChange = (event) =>{
@@ -9,7 +9,7 @@ function AddNote() {
   }
 
   const handleSaveClick = () =>{
-    
+    handleAddNote(noteText)
   }
   return (
     <div className='note new'>
