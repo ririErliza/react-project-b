@@ -90,7 +90,9 @@ textarea:focus {
 	justify-content: space-between;
 }
 
-.delete-icon {
+
+.delete-icon :hover{
+	color: red;
 	cursor: pointer;
 }
 

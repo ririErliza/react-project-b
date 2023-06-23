@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {nanoid} from "nanoid";
 import NotesList from "./components/NotesList";
+import SearchBar from "./components/SearchBar";
 
 
 function App() {
@@ -25,12 +26,13 @@ function App() {
   }
 
   const deleteNote = (id) =>{
-    const newNotes = notes.filter((note)=> notes.id !== id)
+    const newNotes = notes.filter((note)=> note.id !== id)
     setNotes(newNotes)
 
   }
   return (
     <div className="container">
+      <SearchBar/>
       <NotesList 
       notes={notes} 
       handleAddNote={addNote}
