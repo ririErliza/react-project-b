@@ -7,6 +7,10 @@ function AddNote() {
     // console.log(event.target.value)
     setNoteText(event.target.value)
   }
+
+  const handleSaveClick = () =>{
+    
+  }
   return (
     <div className='note new'>
         <textarea 
@@ -18,7 +22,12 @@ function AddNote() {
         ></textarea>
         <div className="note-footer">
             <small>... Remaining</small>
-            <button className="save">Save</button>
+            <button 
+            className="save"
+            onClick={handleSaveClick}
+            >
+              Save
+            </button>
         </div>
     </div>
   )
