@@ -36,7 +36,8 @@ function App() {
     <div className="container">
       <SearchBar handleeSearchNote={setSearchText}/>
       <NotesList 
-      notes={notes} 
+      notes={notes.filter((note)=>note.text.toLowerCase().includes(searchText)
+        )} 
       handleAddNote={addNote}
       handleDeleteNote={deleteNote}
       />
